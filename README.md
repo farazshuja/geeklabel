@@ -1,2 +1,2 @@
 # geeklabel
-Single Page application using just css/html (No 3rd party css framework used)
+PSD to Single page web site with html5/css3 without using any 3rd party css framework like bootsrap, foundation etc.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <title>Geek Label</title>
+        
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+    
+  </head>
+  <body>
+
+    <section id="main" class="main-section">
+        <div class="inner">            
+            <img src="img/logo.png" alt="Geek Label Logo">            
+            <p>A team of self confessed geeks who are all about great digital design</p>            
+        </div>        
+        <div class="next-icon">
+            <a href="#design"><i class="material-icons">expand_more</i></a>
+        </div>        
+    </section>
+
+    <section id="design" class="design-section feature-section">
+        <div class="inner">
+            <img class="img--40" src="img/design.jpg" alt="design illustration">
+            <p class="lg">Some agencies love <span class="highlight">design</span>, but don't know how to build</p>            
+        </div>
+        <div class="next-icon">
+            <a href="#build"><i class="material-icons">expand_more</i></a>
+        </div>
+    </section>
+
+    <section id="build" class="build-section feature-section">
+        <div class="inner">
+            <img class="img--40" src="img/build.jpg" alt="design illustration">
+            <p class="lg">Some agencies know how to <span class="highlight">build</span> but can't do design</p>
+        </div>
+        <div class="next-icon">
+            <a href="#design-build"><i class="material-icons">expand_more</i></a>     
+        </div>
+    </section>
+
+    <section id="design-build" class="design-build-section feature-section">
+        <div class="inner">
+            <img class="img--40" src="img/design_build.jpg" alt="design illustration">
+            <p class="lg">We love <span class="highlight">both</span></p>
+        </div>
+        <div class="next-icon">
+            <a href="#services"><i class="material-icons">expand_more</i></a>            
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h1>Services</h1>
+        <div class="row">
+            <div class="md--25">
+                <div class="service-icon dev-icon"></div>
+                <h3>Web Developmnet</h3>
+            </div>
+            <div class="md--25">
+                <div class="service-icon design-icon"></div>
+                <h3>Design</h3>
+            </div>
+            <div class="md--25">
+                <div class="service-icon branding-icon"></div>
+                <h3>Branding</h3>
+            </div>
+            <div class="md--25">
+                <div class="service-icon ux-icon"></div>
+                <h3>UX Research</h3>
+            </div>
+        </div>
+        <div class="next-icon">
+            <a href="#clients"><i class="material-icons">expand_more</i></a>            
+        </div>
+    </section>
+    <section id="clients" class="clients-section">
+        <h1>Clients</h1>
+        <div class="row">
+            <div class="md--33">
+                <div class="client-icon">
+                    <img class="full-img" src="img/pshe_logo.jpg" alt="PSHE Logo">
+                </div>                
+            </div>
+            <div class="md--33">
+                <div class="client-icon">
+                    <img class="full-img" src="img/photo_logo.jpg" alt="Photo Logo">
+                </div>                
+            </div>
+            <div class="md--33">
+                <div class="client-icon">
+                    <img class="full-img" src="img/vegan_logo.jpg" alt="Vegan Logo">
+                </div>                
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="next-icon">
+            <a href="#find-us"><i class="material-icons">expand_more</i></a>                  
+        </div>
+    </section>
+
+    <section id="find-us" class="find-us-section">
+        <h1>How to find us</h1>
+        <div id="map"></div>
+        <div class="next-icon">
+            <a href="#contact"><i class="material-icons">expand_more</i></a>            
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <h1>Contact</h1>
+        <form action="">
+            <input type="text" class="form-control" placeholder="Name" />
+            <input type="text" class="form-control" placeholder="Email" />
+            <textarea name="message" rows="5" class="form-control" placeholder="Message"></textarea>
+            <button class="btn-primary">Send Message!</button>
+            <p class="hint">Or Phone on 01923 220121</p>
+        </form>
+    </section>
+
+    <script>
+        function initMap() {            
+        var uluru = {lat: 51.527756, lng: -0.085704};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: 'img/marker.png'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initMap"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+/* Reset main attributes of elements to get same layout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+h1,h3 {
+    color: #414042;
+    font-size: 2.9vw;
+    text-align: center;
+    padding: 5% 0;
+}
+h3 {
+    font-size: 1.2vw;
+    padding: 30px 0;
+}
+p {
+    font-size: 3.5vw;
+    padding: 100px 70px 0;    
+}
+p.lg {
+    font-size: 3.6vw;
+    padding: 3% 0;
+}
+.highlight {
+    color: #d83454;
+}
+.clear {clear: both;}
+.img--40 {
+    width: 40%;
+    padding-top: 5%;
+}
+.full-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+div.next-icon {
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 10px;
+    width: 60px;
+    height: 50px;
+    display: block;    
+    text-align: center;
+}
+.material-icons {
+    color: #fff;
+    background: #d83454;
+    font-size: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+.main-section, .feature-section {
+    height: 100%;    
+    text-align: center;
+    background: #d83454;
+    position: relative;
+}
+.main-section img {
+    width: 30%;
+    padding-top: 10%;
+}
+.main-section p {
+    color: #fff; 
+}
+
+.feature-section {            
+    background: #f1f2f2;    
+}
+
+.service-icon {
+    background: #d83454;
+    width: 50%;
+    padding-bottom: 50%;    /* Create square of 50% */    
+    background-size: 60% !important;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dev-icon {
+    background: #d83454 url('../img/dev_icon.png') no-repeat center center;
+}
+.ux-icon {
+    background: #d83454 url('../img/ux_icon.png') no-repeat center center;
+}
+.branding-icon {
+    background: #d83454 url('../img/branding_icon.png') no-repeat center center;
+}
+.design-icon {
+    background: #d83454 url('../img/design_icon.png') no-repeat center center;
+}
+
+.services-section {
+    height: 100%;
+    width: 100%;    
+    text-align: center;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+.services-section .material-icons {
+    background: #fff;
+    border: 2px solid #414042;
+    color: #414042;
+}
+
+.clients-section, .find-us-section, .contact-section{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: #f1f2f2;
+    position: relative;    
+}
+.clients-section .row {
+    padding-top: 5%;
+}
+
+#map {
+    width: 100%;
+    height: 50%
+}
+
+
+/* Simple Grid system */
+.row {
+    padding: 0 200px;
+}
+.row:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+.md--25 {
+    width: 25%;
+    float: left;
+    text-align: center
+}
+.md--33 {
+    width: 33.333%;
+    float: left;
+    text-align: center
+}
+
+/* Form section */
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+.form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    padding: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+textarea {
+    resize: none;    
+}
+.btn-primary {
+    width: 100%;
+    border-radius: 3px;
+    background: #d83454;
+    font-size: 24px;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+}
+.btn-primary:hover {
+    background: #d85670;
+}
+p.hint {
+    font-size: 24px;
+    color: #414042;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Handle Tablets of screen size 1024 and lower */
+@media (max-width: 1024px) {
+  .main-section img {padding-top: 20%;}
+  .material-icons {font-size: 30px;}
+  .img--40 {padding-top: 10%;}
+  .services-section .row {padding: 0;}
+  .clients-section .row {padding: 0;}
+  h1 {padding: 10% 0 10%; font-size: 4vw;}
+
+  .md--33 {
+      float: none;
+      width: 100%;
+      margin: 40px 0;
+  }
+  .md--33 img {
+      width: 30%;
+  }
+
+  form {
+      width: 90%;
+  }
+}
+
+/* Handling devices of screen size 640 and lower */
+@media (max-width: 768px) {
+  .md--25 {float: none; width: 100%;padding: 0 30px; margin-bottom: 20px;}
+  .md--25 h3 {float: left; font-size: 3vw; padding-top: 10%; margin-left: 10px;}
+  .md--25 .service-icon {float: left; width: 25%; padding-bottom: 25%;}
+  .md--25:after {display: table; content: " "; clear: both;}
+}
+
+/* Handling devices of screen size 640 and lower */
+@media (max-width: 640px) {
+  .main-section img {padding-top: 40%;}
+  .img--40 {width: 50%;padding-top: 20%;}
+}
